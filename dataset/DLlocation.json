@@ -1,0 +1,23 @@
+{
+	"name": "DLlocation",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "MoviesDLLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "MoviesDB",
+				"fileSystem": "folder"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

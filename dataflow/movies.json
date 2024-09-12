@@ -1,0 +1,29 @@
+{
+	"name": "movies",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "DLlocation",
+						"type": "DatasetReference"
+					},
+					"name": "TransformMovies"
+				}
+			],
+			"sinks": [],
+			"transformations": [
+				{
+					"name": "filter1"
+				}
+			],
+			"scriptLines": [
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> TransformMovies",
+				"TransformMovies filter(ERROR_FUNCTION('')) ~> filter1"
+			]
+		}
+	}
+}
