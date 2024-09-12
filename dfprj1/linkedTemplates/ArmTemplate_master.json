@@ -15,6 +15,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'CosmosDbNoSql1'"
 		},
+		"MoviesDLLS_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'MoviesDLLS'"
+		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
 			"type": "string",
 			"defaultValue": "dssquad2.database.windows.net"
@@ -26,6 +30,10 @@
 		"AzureSqlDatabase1_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "pavan"
+		},
+		"MoviesDLLS_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://movies123.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -60,6 +68,9 @@
 					"CosmosDbNoSql1_connectionString": {
 						"value": "[parameters('CosmosDbNoSql1_connectionString')]"
 					},
+					"MoviesDLLS_accountKey": {
+						"value": "[parameters('MoviesDLLS_accountKey')]"
+					},
 					"AzureSqlDatabase1_properties_typeProperties_server": {
 						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_server')]"
 					},
@@ -68,6 +79,9 @@
 					},
 					"AzureSqlDatabase1_properties_typeProperties_userName": {
 						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_userName')]"
+					},
+					"MoviesDLLS_properties_typeProperties_url": {
+						"value": "[parameters('MoviesDLLS_properties_typeProperties_url')]"
 					}
 				}
 			},

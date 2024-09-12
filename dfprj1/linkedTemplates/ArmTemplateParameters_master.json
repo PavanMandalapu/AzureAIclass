@@ -11,6 +11,9 @@
 		"CosmosDbNoSql1_connectionString": {
 			"value": ""
 		},
+		"MoviesDLLS_accountKey": {
+			"value": ""
+		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
 			"value": "dssquad2.database.windows.net"
 		},
@@ -19,6 +22,9 @@
 		},
 		"AzureSqlDatabase1_properties_typeProperties_userName": {
 			"value": "pavan"
+		},
+		"MoviesDLLS_properties_typeProperties_url": {
+			"value": "https://movies123.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"value": ""
